@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "b1d8b1d7-4690-4561-b7a1-1fe6e7b49d86",
+		"name": "etraveli",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32528561"
+	},
+	"item": [
+		{
+			"name": "update clearing cost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cost\" : \"15\",\r\n    \"country\" : \"UYU\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api-url}}/clearing-cost",
+					"host": [
+						"{{api-url}}"
+					],
+					"path": [
+						"clearing-cost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clearing-cost",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clearing-cost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete clearing cost",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api-url}}/clearing-cost/1",
+					"host": [
+						"{{api-url}}"
+					],
+					"path": [
+						"clearing-cost",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update clearing cost",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cost\" : \"10\",\r\n    \"country\" : \"UYU\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api-url}}/clearing-cost/1",
+					"host": [
+						"{{api-url}}"
+					],
+					"path": [
+						"clearing-cost",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gel by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api-url}}/clearing-cost/1",
+					"host": [
+						"{{api-url}}"
+					],
+					"path": [
+						"clearing-cost",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "health check",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api-url}}/health",
+					"host": [
+						"{{api-url}}"
+					],
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "api-url",
+			"value": "http://localhost:8080"
+		}
+	]
+}
